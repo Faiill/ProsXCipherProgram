@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: darkslategray;
+            color: white;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .navbar {
+            background-color: darkslategray;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 500px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #copy {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Playfair Cipher</a>
+    </div>
+
+    <div class="container">
+        <h1>Encryption and Decryption</h1>
+        <label for="key">Key:</label>
+        <input type="text" id="key" placeholder="Enter the encryption key" /><br /><br />
+        <label for="text">Text:</label>
+        <input type="text" id="text" placeholder="Enter the text to encrypt/decrypt" /><br /><br />
+        <button onclick="handleEncrypt()">Encrypt</button>
+        <button onclick="handleDecrypt()">Decrypt</button><br /><br />
+        <div id="result"></div>
+    </div>
+
+    <script src="PlayfairCipher.js"></script>
+    
+    <footer class="footer">
+    <p id="copy"> Copyright @ 2024 All rights reserved | Made by PROS TEAM.</p>
+</footer>
+</body>
+</html>
